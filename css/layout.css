@@ -1,0 +1,174 @@
+body{
+	background: black;
+	color: white;
+	margin-top:50px;
+	
+}
+header{
+	height: 100vh;
+	margin: auto 0;
+	margin-top: 30vh;
+	vertical-align:middle;
+}
+header h1{
+	font-size: 20em;
+	text-align: center;
+}
+.members{
+	width: 70%;
+	margin-left: 15%;
+	height: 100vh;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	list-style-type: none;
+}
+.members .member{
+	width: 300px;
+	padding: 15px;
+text-align: center;
+}
+
+.members .member img{
+	width: 250px;
+	height: 250px;
+	margin: auto 0;
+	filter: contrast(1) grayscale(1) opacity(1) brightness(1);
+}
+.members .member p{
+	text-align: center;
+}
+.bit{
+	width: 50%;
+	height: 100vh;
+	margin-left: 25%;
+	margin-top: 100px;
+	clear: 100vh;
+}
+
+.contact{
+	width: 50%;
+	height: 100vh;
+}
+
+
+
+/*Media queries -> afblijven. Staan normaal standaard goed*/
+@media(max-width:1200px) {
+    .headline h1 {
+        font-size: 20em;
+    }
+
+    .headline h2 {
+        font-size: 63px;
+    }
+
+    .featurette-divider {
+        margin: 50px 0;
+    }
+    .featurette-heading {
+        font-size: 35px;
+    }
+}
+
+@media(max-width:991px) {
+    .headline h1 {
+        font-size: 12em;
+    }
+
+    .headline h2 {
+        font-size: 50px;
+    }
+
+    .featurette-divider {
+        margin: 40px 0;
+    }
+    .featurette-heading {
+        font-size: 30px;
+    }
+    .bit{
+    	width: 80%;
+    	margin: 0 10% 0 10%;
+    }
+}
+
+@media(max-width:768px) {
+    .container {
+        margin: 0 15px;
+    }
+
+    .featurette-divider {
+        margin: 40px 0;
+    }
+
+    .featurette-heading {
+        font-size: 25px;
+    }
+    .bit{
+    	width: 80%;
+    	margin: 0 10% 0 10%;
+    }
+}
+
+@media(max-width:668px) {
+    .headline h1 {
+        font-size: 10em;
+    }
+
+    .headline h2 {
+        font-size: 32px;
+    }
+
+    .featurette-divider {
+        margin: 30px 0;
+    }
+    .bit{
+    	margin: 0 10% 0 10%;
+    	width: 80%;
+    }
+}
+@media(max-height: :650px){
+	.headline h1{
+		font-size: 9em;
+	}
+	.bit{
+    	margin: 0 10% 0 10%;
+    	width: 80%;
+    }
+}
+
+@media(max-width:640px) {
+    .headline {
+        padding: 75px 0 25px 0;
+    }
+
+    .headline h1 {
+        font-size: 6em;
+    }
+
+    .headline h2 {
+        font-size: 30px;
+    }
+    .members{
+    	height: 100%;
+    }
+    .bit{
+    	margin: 200px 10% 0 10%;
+    	width: 80%;
+    }
+}
+
+@media(max-width:375px) {
+    .featurette-divider {
+        margin: 10px 0;
+    }
+    .members{
+    	height: 100%;
+    }
+    .bit{
+    	margin: 200px 10% 0 10%;
+    }
+
+   
+
+}
