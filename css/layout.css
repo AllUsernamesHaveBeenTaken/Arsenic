@@ -7,13 +7,32 @@ body{
 header{
 	height: 100vh;
 	margin: auto 0;
-	margin-top: 30vh;
+	/*margin-top: 30vh;*/
 	vertical-align:middle;
+    background-image: url(../images/Top-bg.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
 }
 header h1{
 	font-size: 20em;
 	text-align: center;
-    background-image: url(./images/Top-bg.jpg);
+}
+
+.ir {
+    display: block;
+    background-size: 100%; 
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.members .member img:hover{
+    width: 250px;
+    height: 250px;
+    margin: auto 0;
+    -webkit-filter: grayscale(100%) opacity(0.5);
+    -webkit-transition: opacity 1s ease;
 }
 
 .members{
@@ -24,21 +43,24 @@ header h1{
 	flex-wrap: wrap;
 	justify-content: center;
 	list-style-type: none;
+    margin-top: 10rem;
 }
 .members .member{
 	width: 300px;
 	padding: 15px;
-text-align: center;
+    text-align: center;
 }
 
 .members .member img{
 	width: 250px;
 	height: 250px;
 	margin: auto 0;
-	filter: contrast(1) grayscale(1) opacity(1) brightness(1);
+	/*filter: contrast(1) grayscale(100%) opacity(1) brightness(1);*/
+    -webkit-filter: grayscale(100%);
 }
 .members .member p{
 	text-align: center;
+    visibility: hidden;
 }
 .bit{
 	width: 50%;
